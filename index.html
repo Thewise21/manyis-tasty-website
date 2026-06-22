@@ -12,6 +12,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍲</text></svg>">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -469,11 +470,22 @@
     <div class="footer-bottom">
       <p>&copy; 2025 Manyi's Tasty Restaurant. All rights reserved.</p>
       <div class="footer-links">
-        <a href="#">Privacy</a>
-        <a href="#">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+        <a href="impressum.html">Impressum</a>
       </div>
     </div>
   </footer>
+
+  <!-- COOKIE BANNER -->
+  <div id="cookieBanner" class="cookie-banner">
+    <div class="cookie-content">
+      <p>Diese Website verwendet Cookies und Google Maps. Mit der Nutzung stimmst du der <a href="datenschutz.html">Datenschutzerklärung</a> zu.</p>
+      <div class="cookie-buttons">
+        <button id="cookieAccept" class="btn-primary cookie-btn">Akzeptieren</button>
+        <button id="cookieDecline" class="cookie-btn cookie-decline">Nur notwendige</button>
+      </div>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>

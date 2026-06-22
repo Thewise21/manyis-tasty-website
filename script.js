@@ -150,6 +150,18 @@ document.addEventListener('DOMContentLoaded', () => {
     }, { passive: true });
   }
 
-
+  // --- COOKIE BANNER ---
+  const cookieBanner = document.getElementById('cookieBanner');
+  if (cookieBanner && !localStorage.getItem('cookieConsent')) {
+    setTimeout(() => cookieBanner.classList.add('visible'), 1500);
+    document.getElementById('cookieAccept')?.addEventListener('click', () => {
+      localStorage.setItem('cookieConsent', 'all');
+      cookieBanner.classList.remove('visible');
+    });
+    document.getElementById('cookieDecline')?.addEventListener('click', () => {
+      localStorage.setItem('cookieConsent', 'essential');
+      cookieBanner.classList.remove('visible');
+    });
+  }
 
 });
